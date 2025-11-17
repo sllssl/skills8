@@ -671,4 +671,111 @@ footer {
   text-align: center;
   padding: 15px;
   font-weight: bold;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.08);
+  transition: opacity 0.3s;
+}
+
+#manage-announcements-btn {
+  margin-left: 10px;
+  background: linear-gradient(145deg, var(--success), var(--success-light));
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--success);
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.08);
+}
+
+#manage-announcements-btn:hover {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+#announcement-modal .modal-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 24px 20px 20px 20px;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+  border: 1px solid var(--border);
+}
+
+#announcement-list {
+  margin-bottom: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.announcement-item {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.announcement-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.announcement-actions button {
+  font-size: 0.8em;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--primary-light);
+  color: white;
+  border: none;
+  transition: background 0.2s;
+}
+
+.announcement-actions button.delete {
+  background: var(--error);
+}
+
+.announcement-actions button.delete:hover {
+  background: var(--error-light);
+  color: var(--error);
+}
+
+.announcement-actions button.edit {
+  background: var(--success);
+}
+
+.announcement-actions button.edit:hover {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+#announcement-form .form-group {
+  margin-bottom: 10px;
+}
+
+#announcement-form label {
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 2px;
+  display: block;
+}
+
+#announcement-form input[type="text"],
+#announcement-form input[type="date"] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.95em;
+  margin-top: 2px;
+}
+
+#announcement-form button {
+  margin-right: 8px;
 }
